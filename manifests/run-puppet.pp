@@ -9,3 +9,8 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/15',
 }
+
+file { '/root/hello.txt':
+  content=> "hello, world\n",
+}
+
